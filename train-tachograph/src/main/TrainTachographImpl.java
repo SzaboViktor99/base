@@ -24,4 +24,8 @@ public class TrainTachographImpl{
             new Date()
         );
     }
+
+    public boolean isEmpty(){
+        return tachoData.isEmpty();
+    }
 }
