@@ -24,6 +24,7 @@ public class TrainControllerImpl implements TrainController {
 	}
 
 	public int speedCorrection(int actualSpeed, int offset){
+		//Adds an offset to the actual speed.
 		int correctedSpeed = actualSpeed+offset;
 		return correctedSpeed;
 	}
