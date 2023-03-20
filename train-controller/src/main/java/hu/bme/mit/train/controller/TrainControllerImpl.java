@@ -23,6 +23,11 @@ public class TrainControllerImpl implements TrainController {
 		enforceSpeedLimit();
 	}
 
+	public int speedCorrection(int actualSpeed, int offset){
+		int correctedSpeed = actualSpeed+offset;
+		return correctedSpeed;
+	}
+
 	@Override
 	public int getReferenceSpeed() {
 		return referenceSpeed;
